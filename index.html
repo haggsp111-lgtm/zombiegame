@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Zombie World - Лаборатория / Источник Вируса</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- МЕНЮ -->
+<div id="menuOverlay" class="menu-overlay">
+    <div class="menu-panel">
+        <h1>🧟 ZOMBIE WORLD 🧟</h1>
+        <div class="subtitle">▸ уничтожь источник вируса ◂</div>
+        <button class="menu-btn" id="startBtn">▶ СТАРТ</button>
+        <button class="menu-btn" id="exitMenuBtn">⛔ ВЫХОД</button>
+        <div class="controls-info">
+            ◀ ▶ / A D | ПРОБЕЛ / W — прыжок | 🔫 ЛКМ — стрельба<br>
+            1 — машина | 2 — мотоцикл | 3 — пешком | E — уничтожить источник вируса
+        </div>
+    </div>
+</div>
+
+<!-- HUD -->
+<div class="hud" id="hudPanel" style="display: none;">
+    <div class="stat">❤️ <span id="hpVal">100</span>%</div>
+    <div class="stat">🔫 <span id="weapName">Глок</span> | <span id="dmgShow">18</span></div>
+    <div class="stat">🚗 <span id="vehName">Пешком</span></div>
+    <div class="stat menu-icon" id="quitInGame">⚙️ МЕНЮ</div>
+</div>
+
+<!-- ЭФФЕКТЫ -->
+<div id="damageFlash" class="flash"></div>
+<div id="storyBox" class="story-text">🧪 ВИРУС X-19. УНИЧТОЖЬ ИСТОЧНИК В ЛАБОРАТОРИИ. 🧟</div>
+<div id="thoughtBox" class="thought"></div>
+
+<!-- CANVAS -->
+<canvas id="gameCanvas" width="1100" height="560"></canvas>
+
+<!-- СКРИПТЫ -->
+<script src="js/player.js"></script>
+<script src="js/enemies.js"></script>
+<script src="js/combat.js"></script>
+<script src="js/world.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
